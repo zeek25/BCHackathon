@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Calculate driving distance with Google Maps API</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Bs1qfCVrAdp_SuU9mql_tY42yyMgS0k&libraries=places&callback=initMap" type="text/javascript"></script>
+    <!-- According to the Google Maps API Terms of Service you are required display a Google map when using the Google Maps API. -->
+
+</head>
+
+<body>
+
+  <script type="text/javascript" src="js/mapsAPI.js"></script>
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Bs1qfCVrAdp_SuU9mql_tY42yyMgS0k&libraries=places&callback=initMap" type="text/javascript"></script> -->
+
+  <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>-->
+
+Source:
+<input type="text" id="txtSource" value="Arvin, Ca" style="width: 200px" />
+Destination:
+<input type="text" id="txtDestination" value="Bakersfield, Ca" style="width: 200px" />
+<br />
+<input type="button" value="Get Route" onclick="GetRoute()" />
+<hr />
+
+<div id="dvDistance"> <!-- output distance from txtSource to txtDestination -->
+</div>
+</body>
+
+</html>
